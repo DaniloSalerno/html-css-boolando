@@ -22,11 +22,17 @@ body {
 
 header {
     background-color: var(--bl-primary);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    padding-top: 4rem;
 }
 
 a {
     text-decoration: none;
-    color: var(--bl-white);
 }
 
 footer {
@@ -80,6 +86,10 @@ header .center img {
     width: 100px;
 }
 
+header a {
+    color: var(--bl-white);
+}
+
 .login {
     text-align: end;
 }
@@ -104,12 +114,14 @@ header nav > a {
 .login i{
     margin-left: 0.5rem;
 }
+
+.login i:hover{
+    cursor: pointer;
+}
 /* #endregion header */
 
 
 /* #region main */
-
-/* item */
 
 .item_container.d_flex {
     flex-wrap: wrap;
@@ -119,6 +131,22 @@ header nav > a {
 .item_view {
     width: calc(100% / 3 - 1rem);
     padding: 2rem 0;
+}
+
+.item_info a {
+    color: var(--bl-black);
+}
+
+.item_info .brand:hover a {
+    text-decoration: underline;
+}
+
+.item_info .item_name {
+    padding: 0.25rem 0;
+}
+
+.item_info .item_name:hover a {
+    text-decoration: underline;
 }
 
 .item_pic {
@@ -144,29 +172,27 @@ header nav > a {
 }
 
 
-.item_pic > span {
+.item_pic > span.heart {
     position: absolute;
 }
 
-span.rebate {
+.item_pic .discount_info {
     left: 0;
-    bottom: 1rem;
-    background-color: var(--bl-price);
-
-    color: var(--bl-white);
+    bottom: 2.5rem;
+    position: absolute;
     font-size: 0.9rem;
     font-weight: bold;
+    color: var(--bl-white);
+}
+
+span.rebate {
+    background-color: var(--bl-price);
     padding: 0.3rem 0.6rem;
+
 }
 
 span.label {
-    bottom: 1rem;
-    left: 4rem;
     background-color: var(--bl-label);
-
-    color: var(--bl-white);
-    font-weight: bold;
-    font-size: 0.9rem;
     padding: 0.3rem 0.6rem;
 }
 
@@ -201,13 +227,15 @@ span.heart {
     font-weight: bold;
     font-size: 0.8rem;
 }
-/* /item */
-
 
 /* #endregion main */
 
 
 /* #region footer */
+
+footer a {
+    color: var(--bl-white);
+}
 
 .foot_left a{
     margin-right: 1rem;
@@ -215,6 +243,7 @@ span.heart {
 
 .foot_right .social a {
     margin-right: 1rem;
+    font-size: 1.25rem;
 }
 /* #endregion footer */
 
