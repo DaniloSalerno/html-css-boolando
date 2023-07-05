@@ -101,7 +101,7 @@ header nav > a {
 
 .item_view {
     width: calc(100% / 3 - 1rem);
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 .item_pic {
@@ -124,12 +124,22 @@ span.rebate {
     left: 0;
     bottom: 1rem;
     background-color: var(--bl-price);
+
+    color: var(--bl-white);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
 }
 
 span.label {
     bottom: 1rem;
-    left: 3rem;
+    left: 4rem;
     background-color: var(--bl-label);
+
+    color: var(--bl-white);
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
 }
 
 span.heart {
@@ -138,6 +148,33 @@ span.heart {
     right: 0;
     top: 0;
 }
+
+
+.item_pic:hover .heart {
+    color: var(--bl-price);
+}
+
+.item_info .brand {
+    font-size: 0.8rem;
+}
+
+.item_info .item_name {
+    font-weight: bold;
+}
+
+.item_info .price span.full_price {
+    color: var(--bl-black);
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+
+.item_info .price span:first-of-type {
+    color: var(--bl-price);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
 /* /item */
 
 
@@ -153,18 +190,5 @@ span.heart {
     background-color: rgb(255, 251, 0);
 } 
 
-/* .debug .item_container {
-    background-color: orange;
-    height: 900px;
-    display: flex;
-    flex-direction: column;
-}
-
-span {
-    position: absolute;
-    top: 0;
-}
-
-*/
 
 /* #endregion debug */
