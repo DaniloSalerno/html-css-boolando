@@ -26,6 +26,17 @@ header {
 
 a {
     text-decoration: none;
+    color: var(--bl-white);
+}
+
+footer {
+    background-color: var(--bl-dark);
+    color: var(--bl-white);
+}
+
+header .center.d_flex, footer .center.d_flex {
+    justify-content: space-between;
+    align-items: center;
 }
 /* #endregion common */
 
@@ -48,14 +59,22 @@ a {
 .py_2 {
     padding: 1rem 0;
 }
+.py_4 {
+    padding: 2rem 0;
+}
+
+.mb_2 {
+    margin-bottom: 1rem;
+}
+
+.fz_1 {
+    font-size: 0.75rem;
+}
 /* #endregion utilities */
 
 
 /* #region header */
-.center.d_flex {
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 header .center img {
     width: 100px;
@@ -89,8 +108,6 @@ header nav > a {
 
 
 /* #region main */
-
-/* #endregion main */
 
 /* item */
 
@@ -184,10 +201,22 @@ span.heart {
     font-weight: bold;
     font-size: 0.8rem;
 }
-
-
 /* /item */
 
+
+/* #endregion main */
+
+
+/* #region footer */
+
+.foot_left a{
+    margin-right: 1rem;
+}
+
+.foot_right .social a {
+    margin-right: 1rem;
+}
+/* #endregion footer */
 
 /* #region debug */
 
