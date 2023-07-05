@@ -106,15 +106,26 @@ header nav > a {
 
 .item_pic {
     position: relative;
-    background-image: url('../img/1.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
+    height: 550px;
 }
 
-.item_pic:hover {
-    background-image: url('../img/1b.webp');
+.item_pic img {
+    width: 100%;
 }
+
+.item_pic img:last-of-type {
+    display: none;
+}
+
+
+.item_pic:hover img:last-of-type {
+    display: block;
+}
+
+.item_pic:hover img:first-of-type {
+    display: none;
+}
+
 
 .item_pic > span {
     position: absolute;
@@ -189,6 +200,8 @@ span.heart {
 .debug .item_info {
     background-color: rgb(255, 251, 0);
 } 
+
+
 
 
 /* #endregion debug */
