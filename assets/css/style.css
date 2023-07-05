@@ -88,7 +88,83 @@ header nav > a {
 /* #endregion header */
 
 
+/* #region main */
+
+/* #endregion main */
+
+/* item */
+
+.item_container.d_flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item_view {
+    width: calc(100% / 3 - 1rem);
+    padding-top: 2rem;
+}
+
+.item_pic {
+    position: relative;
+    background-image: url('../img/1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.item_pic:hover {
+    background-image: url('../img/1b.webp');
+}
+
+.item_pic > span {
+    position: absolute;
+}
+
+span.rebate {
+    left: 0;
+    bottom: 1rem;
+    background-color: var(--bl-price);
+}
+
+span.label {
+    bottom: 1rem;
+    left: 3rem;
+    background-color: var(--bl-label);
+}
+
+span.heart {
+    background-color: var(--bl-white);
+    padding: 1rem;
+    right: 0;
+    top: 0;
+}
+/* /item */
+
+
 /* #region debug */
 
+
+.debug .item_view {
+    background-color: green;
+}
+
+
+.debug .item_info {
+    background-color: rgb(255, 251, 0);
+} 
+
+/* .debug .item_container {
+    background-color: orange;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    position: absolute;
+    top: 0;
+}
+
+*/
 
 /* #endregion debug */
